@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <div class="main-section">
+      <h1 class="title-heading">STOP WATCH</h1>
+      <div id="timer-section">00 : 00 : 00 : 00</div>
+      <div class="button-section">
+        <button class="btn" id="start-btn" onclick="startStopwatch()">
+          Start
+        </button>
+        <button class="btn" id="pause-btn" onclick="pauseStopwatch()">
+          Pause
+        </button>
+        <button class="btn" id="reset-btn" onclick="resetStopwatch()">
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

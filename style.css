@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+.main-section {
+  display: flex;
+  height: 100svh;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title-heading {
+  font-size: 70px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  line-height: 80px;
+  color: #7c2ae8;
+}
+
+#timer-section {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.button-section {
+  display: flex;
+  gap: 50px;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  color: #d6d3e6;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+}
+
+#start-btn {
+  background-color: #8b54ff;
+}
+
+#pause-btn {
+  background-color: #e5530c;
+}
+
+#reset-btn {
+  background-color: #d2bc00;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: gray !important;
+  cursor: not-allowed;
+  transform: scale(1);
+}
